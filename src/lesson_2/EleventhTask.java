@@ -6,7 +6,7 @@ package lesson_2;
 public class EleventhTask {
     public static void main(String[] args) {
         int[] array = new int[101];
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             array[i] = i;
             System.out.print(array[i] + " ");
         }
