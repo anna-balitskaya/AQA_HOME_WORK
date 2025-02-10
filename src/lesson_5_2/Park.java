@@ -3,7 +3,7 @@ package lesson_5_2;
 public class Park {
     private final String name;
 
-    static class Attraction {  //вложенный нестатический класс
+    private class Attraction {  //вложенный нестатический класс
         private final String name_a;
         private final String information;
         private final String working_hours;
