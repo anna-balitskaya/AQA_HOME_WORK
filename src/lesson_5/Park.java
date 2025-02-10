@@ -5,7 +5,7 @@ package lesson_5;
  */
 
 public class Park {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         Attraction attraction1 = new Attraction("Stealth", "The UK's Fastest Launch Coaster", "9AM-7PM", 35.50);
         attraction1.attractionInfo();
         Attraction attraction2 = new Attraction("Vortex", "Spin, swing and reach for the skies on Vortex", "9AM-7PM", 40.55);
@@ -23,6 +23,7 @@ public class Park {
         private String information;
         private String working_hours;
         private double price;
+
 
         Attraction(String name, String information, String working_hours, double price) {
             this.name = name;
