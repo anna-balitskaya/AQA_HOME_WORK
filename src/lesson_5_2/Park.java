@@ -1,13 +1,13 @@
 package lesson_5_2;
 
 public class Park {
-    private String name;
+    private final String name;
 
-    public class Attraction {  //вложенный нестатический класс
-        private String name_a;
-        private String information;
-        private String working_hours;
-        private double price;
+    private class Attraction {  //вложенный нестатический класс
+        private final String name_a;
+        private final String information;
+        private final String working_hours;
+        private final double price;
 
 
         Attraction(String name_a, String information, String working_hours, double price) {
@@ -17,7 +17,7 @@ public class Park {
             this.price = price;
         }
 
-        public void attractionInfo() {
+        private void attractionInfo() {
             System.out.println("\nНазвание аттракциона: " + name_a + "\n" + "Информация о аттракционе: " + information + "\n" + "Время работы: " + working_hours + "\n" + "Стоимость: " + price);
         }
     }
