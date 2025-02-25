@@ -13,6 +13,7 @@ public class Plate {
         } else {
             System.out.println("В тарелке не осталось еды");
         }
+
     }
 
     public int getFoodAmount() {

@@ -39,6 +39,7 @@ public class Cat extends Animal {
                 return false;
             }
         }
+
     static int getCountCat() {
         return countCat;
     }
