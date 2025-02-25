@@ -2,11 +2,13 @@ package Lesson_6;
 
 public class Cat extends Animal {
     static int countCat = 0;
-    public int lenght;
 
-    public Cat(String name, boolean fullness) {
+    int satiety;
+
+    public Cat(String name) {
         super(name);
         countCat++;
+        this.satiety = 0;
     }
 
 
@@ -26,12 +28,19 @@ public class Cat extends Animal {
         System.out.println("Кот " + name + " не умеет плавать");
     }
 
-    @Override
-    public void eat() {
-        super.eat();
-    }
-
+        public boolean eatFromPlate(Plate plate, int amount) {
+            if (plate.getFoodAmount() >= amount) {
+                plate.reduceAmount(amount);
+                satiety = satiety + amount;
+                System.out.println("Кот " + name + " поел," + " сытость: " + satiety);
+                return true;
+            } else {
+                System.out.println("В миске недостаточно еды для кота " + name + " сытость: " + satiety);
+                return false;
+            }
+        }
     static int getCountCat() {
         return countCat;
     }
+
 }

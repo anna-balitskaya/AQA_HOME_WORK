@@ -2,7 +2,7 @@ package Lesson_6;
 
 public class Dog extends Animal {
     static int countDog = 0;
-    public Dog (String name, boolean fullness){
+    public Dog (String name){
         super(name);
         countDog++;
 
@@ -31,10 +31,6 @@ public class Dog extends Animal {
         }
     }
 
-    @Override
-    public void eat() {
-        super.eat();
-    }
     static int getCountDog() {
         return countDog;
     }
