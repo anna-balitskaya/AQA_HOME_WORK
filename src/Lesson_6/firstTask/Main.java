@@ -1,4 +1,4 @@
-package Lesson_6;
+package Lesson_6.firstTask;
 
 public class Main {
     public static void main(String[] args){
@@ -26,9 +26,9 @@ public class Main {
 
         plate.addFood(10);
 
-        System.out.println("Всего животных: " + (Lesson_6.Cat.getCountCat() + Lesson_6.Dog.getCountDog()));
-        System.out.println("Всего котов: "+ Lesson_6.Cat.getCountCat());
-        System.out.println("Всего собак: "+ Lesson_6.Dog.getCountDog());
+        System.out.println("Всего животных: " + (Cat.getCountCat() + Dog.getCountDog()));
+        System.out.println("Всего котов: "+ Cat.getCountCat());
+        System.out.println("Всего собак: "+ Dog.getCountDog());
 
 
     }

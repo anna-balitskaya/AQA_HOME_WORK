@@ -1,4 +1,4 @@
-package Lesson_6;
+package Lesson_6.firstTask;
 
 public class Dog extends Animal {
     static int countDog = 0;

@@ -1,4 +1,4 @@
-package Lesson_6;
+package Lesson_6.firstTask;
 
 public abstract class Animal {
     protected String name;
